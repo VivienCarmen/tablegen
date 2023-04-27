@@ -7,6 +7,8 @@ const gyumolcsok = [
     { id: 4, name: 'barack', quantity: 37, price: 12 }
   ];
 
+  //*megjegyzés
+  
 
 function generateTbody() {
     gyumolcsok.forEach((gyumolcs) => {
