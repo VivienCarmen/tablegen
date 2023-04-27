@@ -9,9 +9,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Sablon</h1>
+        <h1>Termés</h1>
+           <!--Button trigger modal-->
+          <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#addModal">
+  Hozzáadás
+          </button>
 
-        <table class="table table-striped bg-danger">
+        <table class="table table-striped ">
             <thead>
               <tr>
                 <th>Név</th>
@@ -26,6 +30,46 @@
 
 
     </div>
+    <!-- Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sokan ezt üzenik neked:</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mt-3">
+         <label for="name" class="form-label">Név</label>
+         <input type="text" placeholder="Név"
+         id="name" class="from-control">
+        
+        </div> 
+        <div class="modal-body">
+          <div class="mt-3">
+           <label for="quantity" class="form-label">Mennyiség</label>
+           <input type="text" placeholder="Mennyiség"
+           id="quantity" class="from-control">
+          
+          </div> 
+          <div class="modal-body">
+            <div class="mt-3">
+             <label for="price" class="form-label">Egységár</label>
+             <input type="text" placeholder="Egységár"
+             id="price" class="from-control">
+            
+            </div> 
+      </div>
+      <div class="modal-footer">
+        <button type="Closebutton" class="btn btn-secondary" data-bs-dismiss="modal">Csukolj be!</button>
+        <button type="Savebutton" class="btn btn-primary">Ments el!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
     <script src="js/bootstrap.js"></script>
     <script src="app.js"></script>
 </body>
